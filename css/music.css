@@ -1,0 +1,277 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Bree Serif', serif;
+}
+body::before
+{   content: " ";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    
+    
+   
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.822);
+    height: 62px;
+}
+
+.nav-item a{
+    color: #e4e1df;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.navbar span{
+    color:#e4e1df;
+    font-weight: bold;
+}
+ .form{
+   
+    margin-right: 2px  !important; 
+}
+.form .btn {
+  background: whitesmoke ;
+  border-radius: 3px;
+}
+.carousel{
+    width: 100%;
+    height: 90vh;
+   
+    overflow: hidden; 
+}
+#slider {
+     background-attachment: fixed; 
+    position: inherit;
+    width: 100%;
+    height: 90vh;
+}
+#slider:hover{
+    cursor: pointer;
+    transform: scale(1.1); 
+    transition: all 2s linear;
+}
+.carousel-caption{
+    bottom: 200px;
+    font-family: 'Lobster', cursive;
+    
+}
+.media-body{
+    text-align: center;
+}
+.genre::before
+{   content: " ";
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+   
+}
+ .images{
+    position: relative;
+    width: 250px;
+    
+} 
+ .images img{
+    display: block;
+    width: 100%;
+    height: 270px;
+    
+} 
+.images .describe{
+    position: absolute;
+    top: 50px;
+    left: 13px;
+    width: 100%;
+    height: 83%;
+    background-color: rgba(255, 235, 205, 0.603);
+    opacity: 0;
+    
+}
+.images .describe:hover{
+    transition: all 1s ease-in-out;
+    opacity: 1;
+    cursor: pointer;
+} 
+.title{
+ text-align: center;
+ margin-top: 45%;
+ font-weight: bold;
+ font-size: 1.5rem;
+ color: rgb(146, 64, 5);
+ 
+}
+.media-body .one{
+    margin-left: 22px;
+    
+}
+.media-body{
+    
+    font-family: 'Syne Mono', monospace;
+    font-size: 1.3rem;
+   color:white;
+    
+}
+.media-body h2{
+    font-family: 'Monoton', cursive;
+    font-size: 1.5rem;
+    color: white;
+}
+.heading h1{
+    text-align: center;
+    position: relative;
+    top: 15px;
+    color: white;
+   
+}
+.artists::before
+{   content: " ";
+    width: 100%;
+    height: 82%;
+    position: absolute;
+    background:url('https://cdn.cjr.org/wp-content/uploads/2019/07/AdobeStock_100000042-e1563305717660-686x371.jpeg') no-repeat center center/cover;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+   
+}
+.artists img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.artists{
+    text-align: center;
+    color: whitesmoke;
+}
+footer{
+    
+    background-color:#3a3a3f;
+    text-align: center;
+    font-weight: bold;
+    height:50px;
+    
+}
+.music_player{
+    background-color: lightcoral;
+    height: 70px;
+    position: sticky;
+    bottom: 0px;
+
+}
+
+.music_player .col{
+    margin: 2px;
+    /* border: 2px solid white; */
+}
+.music_player .col img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.music_player #song{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.music_player #artist_name {
+    position: relative;
+    top: 15px;
+    right: 128px;
+    bottom: 3px;
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+footer span{
+    position: relative;
+    top: 1pc;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: ivory;
+}
+.music_player .music_controller .fas{
+    color: black;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    left: 15%;
+    
+}
+#cover{
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color:gainsboro;
+    font-size: 1.42rem;
+}
+.music_controller .fas:hover{
+    color: grey;
+}
+
+.music_player .music_controller .fa-play-circle{
+font-size: 1.8rem;
+}
+
+.music_player .music_controller .fa-play-circle:hover{
+    color: honeydew;
+}
+.anime{
+    animation: playerRotate 3s linear infinite ;
+}
+ @keyframes  playerRotate{
+     from{
+        transform: rotate(0deg);
+     }
+     to{
+        transform: rotate(360deg);
+     }
+ }
+ .music_control{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding:0px 70px;
+ }
+ .progressbar_container{
+     width: 100%;
+     margin-top: 0.5rem;
+
+ }
+.duration{
+     display: flex;
+     justify-content: space-between;
+     font-family: 'Jost', sans-serif;
+ }
+ .progress_div{
+     position: relative;
+     width: 100%;
+     height: 0.5rem;
+     border-radius: 9px;
+     cursor: pointer;
+     background-color: gainsboro;
+     transition: all 1s linear;
+ }
+ .progress{
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     width: 0%;
+     height: 100%;
+     background-color: black;
+     border-radius: 7px;
+ }
