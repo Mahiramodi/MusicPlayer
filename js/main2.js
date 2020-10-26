@@ -127,7 +127,7 @@ var i=0;
 
      const nextSong = () =>
      {
-         index = (index+1)%songList.length;
+         index = (index+1)% songList.length;
          loadSongs(songList[index]);
          playMusic();
      }

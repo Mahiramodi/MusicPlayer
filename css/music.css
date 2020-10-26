@@ -19,13 +19,15 @@ body::before
 .navbar{
     background-color: rgba(0, 0, 0, 0.829);
     /* height: 6.2rem; */
+   
 }
 
 .nav-item a{
     color: #e4e1df;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.7rem;
     margin-left: 2rem;
+    font-family: 'Jost', sans-serif;
 }
 .navbar span{
     color:#e4e1df;
@@ -40,14 +42,37 @@ body::before
  .form{
    
     margin-right: 0.2rem  !important; 
+    display: flex;
+    margin-top: 0.2rem;
 }
+
 .form-control{
     font-size: 1.5rem;
+    padding: 0rem 1.5rem;
+    background-color: none;
+    outline: none;
+    border: none;
+    opacity: 0;
+    border-radius: 2.25rem;
 }
-.form .btn {
-  background: whitesmoke ;
-  border-radius: 0.3rem;
+.form .fas {
+  display: inline-flex;
+  width: 3.2rem;
+  height:3.2rem;
+  border-radius: 50%;
+  background: rgb(255, 255, 255) ;
   font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  right: 7rem;
+  cursor: pointer;
+  
+}
+
+.form:hover .form-control{ 
+    transition: all 1s ease-in-out;
+    opacity: 1;
 }
 .carousel{
     width: 100%;
@@ -73,6 +98,8 @@ body::before
 .media-body{
     text-align: center;
 }
+ 
+
 .genre::before
 {   content: " ";
     width: 100%;
@@ -81,8 +108,6 @@ body::before
     /* background: linear-gradient(to right, #bdc3c7, #2c3e50); */
     background-color: #f3edf1;
     background-image: linear-gradient(58deg, #f3edf1 0%, #8fb9b7 100%);
-    
-
     left: 0px;
     z-index: -1;
     opacity: 0.8;
@@ -311,17 +336,33 @@ font-size: 1.8rem;
      html{
          font-size: 55%;
      }
-     
+
+    .carousel-caption{
+    bottom: 130rem;
+    font-family: 'Lobster', cursive;
+    
+     }
  }
 
  @media(max-width:768px){
     html{
         font-size: 45%;
     }
+    .form{
+        position: relative;
+        left: -9rem;
+    }
+    .form .fas{
+        position: relative;
+        top: 3rem;
 }
 @media(max-width:425px){
     html{
         font-size: 25%;
+    }
+    .form .fas{
+        position: relative;
+        top: 2.5rem;
     }
     .music_player #artist_name {
         position: absolute;
